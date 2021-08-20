@@ -1,6 +1,8 @@
 let extraMemoryCost = 0;
 let extraStorageCost = 0;
 let deliveryCost = 0;
+let totalPrice = 1299;
+
 // function for handling memory and storage addition events
 function additionalCost(price, item) {
   let itemCost = document.getElementById("extra-" + item);
@@ -74,16 +76,42 @@ document
     deliveryCharge(20);
   });
 
+//final calculation
 function totalAmount() {
   //   debugger;
   let bestPrice = document.getElementById("best-price").innerText;
 
-  let totalPrice =
+  totalPrice =
     Number(bestPrice) +
     Number(extraStorageCost) +
     Number(extraMemoryCost) +
     Number(deliveryCost);
 
   let total = document.getElementById("total-price");
+  let grandTotal = document.getElementById("grand-total");
   total.innerText = totalPrice;
+  grandTotal.innerText = totalPrice;
 }
+
+// coupon apply event
+
+document.getElementById("apply").addEventListener("click", function () {
+  let coupon = document.getElementById("promo-code");
+  let grandTotal = document.getElementById("grand-total");
+
+  if (coupon.value.toLowerCase() === "stevekaku") {
+    // after 20% discount
+    totalPrice = totalPrice - totalPrice * 0.2;
+
+    //displaying the grand total
+    grandTotal.innerText = totalPrice;
+
+    // to prevent buyer from applying coupon multiple times
+    document.getElementById("apply").setAttribute("disabled", true);
+
+    // confirmation of a valid coupon
+    alert("Congrats on 20% discount !");
+  } else {
+    alert("Invalid Promo Code !");
+  }
+});
