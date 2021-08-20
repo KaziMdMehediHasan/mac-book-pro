@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="parent">
+            <div class='half-width'>
+                <img src="images/mac.png" alt="">
+            </div>
+            <div class='half-width'>
+                    <h1>Customize Your Blue 24-inch iMac with Apple M1 Chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage two Thunderbolt/ USB 4 ports Magic Mouse Magic Keyboard-US English.</p>
+
+                    <!-----Memory Options Start-->
+                    <h4>Memory</h4>
+                    <div class="memory-buttons">
+                        <div  class="child-btn">
+                            <button class="btn" id="memory-btn-8">8GB Unified Memory</button>
+                        </div>
+                        <div class="child-btn">
+                            <button class="btn" id="memory-btn-16">16GB Unified Memory</button>
+                        </div>
+                    </div>
+                    <!-----Memory Options End-->
+                    <!-- Storage Option Start -->
+                    <h4>Storage</h4>
+                    <div class="memory-buttons">
+                        <div class="child-btn">
+                            <button class="btn" id="storage-btn-256">256GB SSD Storage</button>
+                        </div>
+                        <div class="child-btn">
+                            <button class="btn" id="storage-btn-512">512GB SSD Storage</button>
+                        </div>
+                        <div class="child-btn">
+                            <button class="btn" id="storage-btn-1024">1TB SSD Storage</button>
+                        </div>
+                    </div>
+                    <!-- Storage Option End -->
+                    <!-- Delivery Option starts -->
+                    <h4>Delivery Options</h4>
+                    <div class="memory-buttons">
+                        <div class="child-btn">
+                            <button class="btn" id="delivery-btn-free">Friday, Aug 25 FREE Delivery</button>
+                        </div>
+                        <div class="child-btn">
+                            <button class="btn" id="delivery-btn-20">Friday, Aug 21 Delivery Charge $20</button>
+                        </div>
+                    </div>
+                <!-- Delivery Option end -->
+
+                <!-- costs of different options -->
+                <div class="calculations">
+                    <div class="title">
+                        <h4>Best Price</h4>
+                        <h4>Extra Memory Cost</h4>
+                        <h4>Extra Storage Cost</h4>
+                        <h4>Delivery Charge</h4>
+                        <hr>
+                        <h4>Total Price</h4>
+                    </div>
+                    <div class="amounts">
+                        <h4>$<span id="best-price">1299</span></h4>
+                        <h4>$<span id="extra-memory">0</span></h4>
+                        <h4>$<span id="extra-storage">0</span></h4>
+                        <h4>$<span id="delivery-charge">0</span></h4>
+                        <hr>
+                        <h4>$<span id="total-price">1299</span></h4>
+                    </div>
+                </div>
+                <!-- costs of different options ends -->
+                <h5>Add Promo Code</h5>
+                <div>
+                    <input type="text"></input>
+                    <button id="apply">Apply</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <src src="js/app.js"></src>
+</body>
+</html>
