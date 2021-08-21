@@ -110,6 +110,8 @@ document.getElementById("apply").addEventListener("click", function () {
     //displaying the grand total
     grandTotal.innerText = discountPrice;
 
+    //clearing the input field
+    coupon.value = "";
     // to prevent buyer from applying coupon multiple times
     document.getElementById("apply").setAttribute("disabled", true);
 
@@ -125,6 +127,7 @@ document.getElementById("apply").addEventListener("click", function () {
     // confirmation of a valid coupon
     alert("Congrats on 20% discount !");
   } else {
+    coupon.value = "";
     alert("Invalid Promo Code !");
   }
 });
