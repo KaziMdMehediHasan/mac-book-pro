@@ -118,11 +118,15 @@ document.getElementById("apply").addEventListener("click", function () {
     let promoParent = document.getElementById("promo-parent");
 
     let note = document.createElement("p");
+    let active = document.createElement("p");
 
     note.innerText = "Warning : To apply a new coupon, Reload and Try again!";
+    active.innerText = "Your Coupon is Active";
 
+    promoParent.appendChild(active);
     promoParent.appendChild(note);
 
+    active.classList.add("text-green");
     note.classList.add("text-red");
     // confirmation of a valid coupon
     alert("Congrats on 20% discount !");

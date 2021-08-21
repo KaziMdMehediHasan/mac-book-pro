@@ -85,7 +85,9 @@ footer{
 .text-red{
     color: rgb(255,0,0);
 }
-
+.text-green{
+    color: 	rgb(3, 158, 3)
+}
 /* Responsive for mobile devices */
 
 @media only screen and (max-width:992px){
