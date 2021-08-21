@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Main section styles */
 .parent{
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@
     padding: 1.5rem 0;
 }
 
-
+/* different button styles */
 .memory-buttons{
     display: flex;
     margin : 1.2rem 0;
@@ -51,6 +52,7 @@
     color: white;
 }
 
+/* bottom part */
 .calculations{
     padding: 2rem 0;
     width: 50%;
@@ -78,4 +80,40 @@
 footer{
     margin-top: 3rem;
     text-align: center;
+}
+
+.text-red{
+    color: rgb(255,0,0);
+}
+
+/* Responsive for mobile devices */
+
+@media only screen and (max-width:992px){
+    .parent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }   
+    .half-width{
+    width: 80%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+    .half-width img{
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.calculations{
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.memory-buttons{
+    justify-content: center;
+}
 }
